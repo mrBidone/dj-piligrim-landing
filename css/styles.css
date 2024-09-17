@@ -179,13 +179,18 @@ body {
 }
 .listening-links-item {
 }
-.social-links-swiper {
+
+.social-link-container {
+  overflow: visible;
+  padding: 0;
+  padding-left: 10px;
 }
-.social-list {
-  display: flex;
-  gap: 4px;
+
+.swiper-wrapper {
 }
+
 .social-list-item {
+  flex: 0 0 auto; /* Не сжимать элементы */
 }
 
 .social-link {
