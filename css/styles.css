@@ -69,7 +69,6 @@ body {
   font-size: 18px;
   color: #fff4f4;
   background-color: var(--main-bg-color);
-  overflow: hidden;
 }
 
 .container {
@@ -109,17 +108,40 @@ body {
   text-align: center;
   color: var(--main-title-color);
 }
-/* .swiper-section {
+.swiper-section {
 }
 .track-swiper {
 }
 .track-swiper-list {
+  margin-bottom: 23px;
 }
 .track-swiper-item {
-} */
+}
 
 .track-swiper-img {
   border-radius: 32px 32px 0 0;
+}
+
+/* swiper pagination */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.swiper-pagination-bullet-custom {
+  width: 12px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active-custom {
+  background-color: #000;
+  width: 33px;
+  border-radius: 10px;
 }
 
 .offers-list {
