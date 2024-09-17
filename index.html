@@ -97,17 +97,63 @@
                 </a>
               </li>
               <li class="offers-list-item">
-                <a class="offers-link-flex-wrapper" href=""
+                <a class="offers-link-flex-wrapper" id="toggle-menu" href=""
                   ><p>Слушать онлайн</p>
-                  <div class="offers-link-icon-thumb">
+                  <div class="offers-link-icon-thumb" id="activeIconThumb">
                     <svg width="4" height="18">
                       <use href="./img/svg/sprite.svg#icon-points"></use>
                     </svg>
                   </div>
                 </a>
               </li>
+              <li class="sub-menu" id="listening-menu">
+                <ul class="listening-links-list" id="listening-links-list">
+                  <li class="listening-links-item">
+                    <a class="listening-links-wrapper" href="">
+                      <svg class="listening-links-icon" width="24" height="26">
+                        <use href="./img/svg/sprite.svg#icon-apple"></use>
+                      </svg>
+                      <p>Apple Music</p>
+                    </a>
+                  </li>
+                  <li class="listening-links-item">
+                    <a class="listening-links-wrapper" href="">
+                      <svg class="listening-links-icon" width="24" height="26">
+                        <use href="./img/svg/sprite.svg#icon-spotify"></use>
+                      </svg>
+                      <p>Spotify</p>
+                    </a>
+                  </li>
+                  <li class="listening-links-item">
+                    <a class="listening-links-wrapper" href="">
+                      <svg class="listening-links-icon" width="24" height="24">
+                        <use href="./img/svg/sprite.svg#icon-deezer"></use>
+                      </svg>
+                      <p>Deezer</p>
+                    </a>
+                  </li>
+                  <li class="listening-links-item">
+                    <a class="listening-links-wrapper" href="">
+                      <svg class="listening-links-icon" width="24" height="24">
+                        <use href="./img/svg/sprite.svg#icon-vk_music"></use>
+                      </svg>
+                      <p>VK Музыка</p>
+                    </a>
+                  </li>
+                  <li class="listening-links-item">
+                    <a class="listening-links-wrapper" href="">
+                      <svg class="listening-links-icon" width="24" height="24">
+                        <use
+                          href="./img/svg/sprite.svg#icon-yandex-music"
+                        ></use>
+                      </svg>
+                      <p>Яндекс.Музыка</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
               <li class="offers-list-item">
-                <a class="offers-link-flex-wrapper" href=""
+                <a class="offers-link-flex-wrapper" id="modal-open" href=""
                   ><p>PR & booking</p>
                   <div class="offers-link-icon-thumb">
                     <svg width="4" height="18">
@@ -224,51 +270,45 @@
       </div>
     </footer>
 
-    <ul class="listening-links-list">
-      <li class="listening-links-item">
-        <a href="">
-          <svg width="24" height="26">
-            <use href="./img/svg/sprite.svg#icon-apple"></use>
-          </svg>
-          <p>Apple Music</p>
-        </a>
-      </li>
-      <li class="listening-links-item">
-        <a href="">
-          <svg width="24" height="26">
-            <use href="./img/svg/sprite.svg#icon-spotify"></use>
-          </svg>
-          <p>Spotify</p>
-        </a>
-      </li>
-      <li class="listening-links-item">
-        <a href="">
-          <svg width="24" height="24">
-            <use href="./img/svg/sprite.svg#icon-deezer"></use>
-          </svg>
-          <p>Deezer</p>
-        </a>
-      </li>
-      <li class="listening-links-item">
-        <a href="">
-          <svg width="24" height="24">
-            <use href="./img/svg/sprite.svg#icon-vk_music"></use>
-          </svg>
-          <p>VK Музыка</p>
-        </a>
-      </li>
-      <li class="listening-links-item">
-        <a href="">
-          <svg width="24" height="24">
-            <use href="./img/svg/sprite.svg#icon-yandex-music"></use>
-          </svg>
-          <p>Яндекс.Музыка</p>
-        </a>
-      </li>
-    </ul>
+    <div class="backdrop isHidden" id="data-modal">
+      <div class="modal-window">
+        <div class="modal-window-content">
+          <h2 class="modal-title">Менеджер</h2>
+          <p class="modal-subtitle">Лола Игамбердыева</p>
+          <ul class="contact-list">
+            <li class="contact-list-item">
+              <span class="contact-list-title">Телефон</span>
+              <a href="tel:+998908069797"
+                ><p class="contact-list-descr">+998908069797</p></a
+              >
+            </li>
+            <li class="contact-list-item">
+              <span class="contact-list-title">WhatsApp</span>
+              <a href="https://wa.me/+998908069797"
+                ><p class="contact-list-descr">+998908069797</p></a
+              >
+            </li>
+            <li class="contact-list-item">
+              <span class="contact-list-title">Telegram</span>
+              <a href="https://t.me/@bookdjpiligrim"
+                ><p class="contact-list-descr">@bookdjpiligrim</p></a
+              >
+            </li>
+            <li class="contact-list-item">
+              <span class="contact-list-title">E-mail</span>
+              <a href="mailto:booking@djpiligrim.com"
+                ><p class="contact-list-descr">booking@djpiligrim.com</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./js/hero-swiper.js"></script>
     <script type="module" src="./js/social-links-swiper.js"></script>
+    <script type="module" src="./js/toggle-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
