@@ -237,3 +237,18 @@ body {
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
 }
+
+/* Listening-link-list styles */
+.listening-links-list {
+  padding: 10px 24px;
+  background-color: rgba(0, 0, 0, 0.61);
+  border-radius: 20px;
+}
+
+.listening-links-item {
+  padding: 29px 0 29px 19px;
+}
+
+.listening-links-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
