@@ -108,12 +108,13 @@ body {
   text-align: center;
   color: var(--main-title-color);
 }
-.swiper-section {
+.swiper-section .section {
+  padding: 15px 0 5px 0;
 }
 .track-swiper {
 }
 .track-swiper-list {
-  margin-bottom: 23px;
+  margin-bottom: 33px;
 }
 .track-swiper-item {
 }
@@ -143,6 +144,13 @@ body {
   width: 33px;
   border-radius: 10px;
 }
+/* 
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+} */
 
 .offers-list {
   display: flex;
