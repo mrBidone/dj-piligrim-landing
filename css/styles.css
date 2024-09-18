@@ -25,6 +25,12 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; /* для Safari и Chrome на мобильных устройствах */
+  -moz-tap-highlight-color: transparent; /* для Firefox (хоть и не поддерживается явно, это на будущее) */
+  -ms-touch-action: manipulation; /* для IE и старых версий Edge */
+  touch-action: manipulation; /* для современных браузеров */
+  outline: none;
 }
 
 .visually-hidden {
