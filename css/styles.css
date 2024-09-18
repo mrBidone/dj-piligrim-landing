@@ -412,4 +412,5 @@ body {
   display: block;
   position: absolute;
   background: linear-gradient(180deg, rgba(86, 249, 68, 0) 39.5%, #56f944 100%);
+  pointer-events: none;
 }
