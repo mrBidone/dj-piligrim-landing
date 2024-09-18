@@ -2,10 +2,10 @@ window.addEventListener("scroll", function () {
   const pageHeader = document.querySelector(".page-header");
   const swiperSection = document.querySelector(".swiper-section");
   const offersSection = document.querySelector(".offers-section");
+  const bgGradient = document.querySelector(".track-swiper-bg-graident");
   const headerRect = pageHeader.getBoundingClientRect();
   const offersRect = offersSection.getBoundingClientRect();
 
-  // Если нижняя граница header находится выше верхней границы вьюпорта
   if (headerRect.bottom <= 0) {
     swiperSection.classList.add("fixed");
     offersSection.classList.add("js-offers-section");
@@ -16,15 +16,13 @@ window.addEventListener("scroll", function () {
     offersSection.classList.remove("js-bg-color");
   }
 
-  // Высота псевдоэлемента (340px)
-  const pseudoElementHeight = 360;
+  const pseudoElementHeight = 350;
 
-  // Если верхняя граница offersSection находится выше высоты псевдоэлемента, фиксируем псевдоэлемент
   if (offersRect.top <= pseudoElementHeight) {
     offersSection.classList.add("fixed-before");
-    offersSection.classList.remove("fix-before");
+    bgGradient.classList.add("jsGradient");
   } else {
     offersSection.classList.remove("fixed-before");
-    offersSection.classList.add("fix-before");
+    bgGradient.classList.remove("jsGradient");
   }
 });
