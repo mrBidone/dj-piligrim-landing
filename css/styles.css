@@ -118,6 +118,23 @@ body {
 .swiper-section .section {
   padding: 15px 0 5px 0;
 }
+
+.swiper-section {
+  /* transition: transform 3000ms ease-out; */
+  /* overflow: scroll;
+  -webkit-overflow-scrolling: touch; */
+  transform: translateY(-30px);
+  transition: transform 0.4s ease;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  transform: translateY(0);
+}
 .track-swiper {
 }
 .track-swiper-list {
@@ -160,7 +177,7 @@ body {
 } */
 
 .js-offers-section {
-  margin-top: 393px;
+  /* margin-top: 393px; */
 }
 
 .offers-section {
@@ -172,7 +189,7 @@ body {
 }
 
 .offers-section .section {
-  padding-top: 0;
+  padding-top: 15px;
 }
 
 .offers-list {
@@ -441,14 +458,6 @@ body {
 
 .jsGradient::before {
   opacity: 0;
-}
-
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
 }
 
 .offers-section::before {
