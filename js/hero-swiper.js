@@ -8,9 +8,7 @@ const swiperHero = new Swiper("#swiperHero", {
   centeredSlides: false,
   loop: true,
   spaceBetween: 10,
-  autoplay: {
-    delay: 2000,
-  },
+  autoplay: false,
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
