@@ -5,22 +5,19 @@ window.addEventListener("scroll", function () {
   const bgGradient = document.querySelector(".track-swiper-bg-graident");
   const headerRect = pageHeader.getBoundingClientRect();
   const offersRect = offersSection.getBoundingClientRect();
-
   if (headerRect.bottom <= 0) {
     swiperSection.classList.add("fixed");
     offersSection.classList.add("js-offers-section");
-    offersSection.classList.add("js-bg-color");
   } else {
     swiperSection.classList.remove("fixed");
     offersSection.classList.remove("js-offers-section");
-    offersSection.classList.remove("js-bg-color");
   }
 
-  const pseudoElementHeight = 350;
+  const pseudoElementHeight = 357;
 
   if (offersRect.top <= pseudoElementHeight) {
-    offersSection.classList.add("fixed-before");
     bgGradient.classList.add("jsGradient");
+    offersSection.classList.add("fixed-before");
   } else {
     offersSection.classList.remove("fixed-before");
     bgGradient.classList.remove("jsGradient");
