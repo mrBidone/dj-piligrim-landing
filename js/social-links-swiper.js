@@ -6,6 +6,7 @@ const swiperSocialLinks = new Swiper("#swiperSocialLinks", {
   loop: false,
   touchRatio: 1,
   resistance: true,
+  resistanceRatio: 0.8,
   autoplay: false,
   allowTouchMove: true,
   on: {
