@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DJ PILIGRIM</title>
+    <title>DJ Piligrim</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -117,8 +117,10 @@
             <h2 class="visually-hidden">Offers</h2>
             <ul class="offers-list">
               <li class="offers-list-item">
-                <a class="offers-link-flex-wrapper" href=""
-                  ><p>Онлайн магазин</p>
+                <a class="offers-link-flex-wrapper"
+                  ><p>
+                    Онлайн магазин <span style="color: #565656">(скоро)</span>
+                  </p>
                   <div class="offers-link-icon-thumb">
                     <svg width="13" height="12">
                       <use href="./img/svg/sprite.svg#icon-link-arrow"></use>
@@ -126,16 +128,7 @@
                   </div>
                 </a>
               </li>
-              <li class="offers-list-item">
-                <a class="offers-link-flex-wrapper" href=""
-                  ><p>Djpiligrim.com</p>
-                  <div class="offers-link-icon-thumb">
-                    <svg class="offers-link-icon" width="13" height="12">
-                      <use href="./img/svg/sprite.svg#icon-link-arrow"></use>
-                    </svg>
-                  </div>
-                </a>
-              </li>
+
               <li class="offers-list-item">
                 <a class="offers-link-flex-wrapper" id="toggle-menu" href=""
                   ><p>Слушать онлайн</p>
@@ -207,6 +200,16 @@
                   ><p>7 Keys</p>
                   <div class="offers-link-icon-thumb">
                     <svg width="13" height="12">
+                      <use href="./img/svg/sprite.svg#icon-link-arrow"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="offers-list-item">
+                <a class="offers-link-flex-wrapper" href=""
+                  ><p>DjPiligrim.art</p>
+                  <div class="offers-link-icon-thumb">
+                    <svg class="offers-link-icon" width="13" height="12">
                       <use href="./img/svg/sprite.svg#icon-link-arrow"></use>
                     </svg>
                   </div>
@@ -305,7 +308,7 @@
     <footer class="footer">
       <div class="container">
         <p class="privacy-policy">
-          © 2009-2024, Piligrim Records. Все права защищены
+          2009-<span></span>, Piligrim Records. Все права защищены
         </p>
       </div>
     </footer>
@@ -351,5 +354,12 @@
     <script type="module" src="./js/toggle-menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/scroll.js"></script>
+    <script defer>
+      window.addEventListener("load", function () {
+        const currentYear = new Date().getFullYear();
+        document.querySelector(".privacy-policy span").textContent =
+          currentYear;
+      });
+    </script>
   </body>
 </html>

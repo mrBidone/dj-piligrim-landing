@@ -239,7 +239,7 @@ body {
 }
 
 .social-link-container .section {
-  padding: 15px 0 44px 0;
+  padding: 65px 0 44px 0;
 }
 
 .swiper-wrapper {
@@ -293,6 +293,7 @@ body {
   max-width: 193px;
   font-weight: 500;
   font-size: 14px;
+  line-height: 20px;
   letter-spacing: -0.04em;
   margin: 0 auto;
   text-align: center;
