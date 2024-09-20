@@ -8,6 +8,6 @@ document
     const thumbIcon = document.getElementById("activeIconThumb");
 
     menu.classList.toggle("open");
-    listeningList.classList.toggle("open");
+    // listeningList.classList.toggle("open");
     thumbIcon.classList.toggle("isActive");
   });

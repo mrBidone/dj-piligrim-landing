@@ -215,7 +215,7 @@ body {
 .js-bg-color {
   background-color: var(--main-bg-color);
 }
-
+/* =========== Offers-list-Styles =============== */
 .offers-section .section {
   padding-top: 15px;
 }
@@ -226,7 +226,6 @@ body {
 }
 
 .offers-list-item:not(:last-child) {
-  display: flex;
   margin-bottom: 10px;
 }
 
@@ -254,6 +253,50 @@ body {
 .offers-link-icon-thumb.isActive {
   background-color: #2e2e2e;
 }
+/* Listening-link-list styles */
+
+.sub-menu {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 1s ease;
+}
+
+.sub-menu.open {
+  opacity: 1;
+  max-height: 500px;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+.listening-links-list {
+  background-color: rgba(0, 0, 0, 0.61);
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px 24px;
+}
+
+.listening-links-item {
+  padding: 30px 0 30px 19px;
+}
+
+.listening-links-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.listening-links-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.listening-links-icon {
+  margin-right: 19px;
+  fill: #ffffff;
+}
+
+.offers-list-item {
+  cursor: pointer;
+}
+
+/* ========== Social-List-Styles ============= */
 
 .social-link-container {
   overflow: visible;
@@ -320,59 +363,6 @@ body {
   margin: 0 auto;
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
-}
-
-/* Listening-link-list styles */
-.listening-links-list {
-  background-color: rgba(0, 0, 0, 0.61);
-  border-radius: 20px;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  margin-bottom: 10px;
-}
-
-.sub-menu {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: all 0.4s ease;
-}
-
-.sub-menu.open {
-  opacity: 1;
-  height: auto;
-  transition: all 0.4s ease;
-}
-
-.listening-links-item {
-  padding: 30px 0 30px 19px;
-}
-
-.listening-links-item:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.listening-links-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.listening-links-icon {
-  margin-right: 19px;
-  fill: #ffffff;
-}
-
-.listening-links-list.open {
-  padding: 10px 24px;
-  max-height: 500px;
-  opacity: 1;
-  transition: opacity 0.4s ease, max-height 0.4s ease;
-}
-
-.offers-list-item {
-  cursor: pointer;
 }
 
 /* MOdal-window */
