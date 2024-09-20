@@ -239,12 +239,11 @@ body {
 }
 
 .social-link-container .section {
-  padding: 65px 0 44px 0;
+  padding: 15px 0 44px 0;
 }
 
 .swiper-wrapper {
   position: relative;
-  margin-bottom: 20px;
 }
 
 .social-list-item {
