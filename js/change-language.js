@@ -1,4 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
+const onlineStoreElem = document.getElementById("onlineStore");
+const onlineStoreNoticeElem = document.getElementById("onlineStoreNotice");
+const musicPlatformsElem = document.getElementById("musicPlatforms");
+const bookingElem = document.getElementById("booking");
+const concertManagerElem = document.getElementById("concertManager");
+const contactNumberElem = document.getElementById("contactNumber");
+const managerNameElem = document.getElementById("managerName");
+const privacyPolicyElem = document.getElementById("privacyPolicy");
+
+// Наблюдатель событий при клике на кнопки
+function setupLanguageButtons(translations) {
+  document.querySelectorAll(".language-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const selectedLang = btn.getAttribute("data-lang");
+      applyTranslation(selectedLang, translations);
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
   loadTranslations(function (translations) {
     setInitialLanguage(translations);
     setupLanguageButtons(translations);
@@ -23,15 +42,6 @@ function setInitialLanguage(translations) {
 }
 
 function applyTranslation(lang, translations) {
-  const onlineStoreElem = document.getElementById("onlineStore");
-  const onlineStoreNoticeElem = document.getElementById("onlineStoreNotice");
-  const musicPlatformsElem = document.getElementById("musicPlatforms");
-  const bookingElem = document.getElementById("booking");
-  const concertManagerElem = document.getElementById("concertManager");
-  const contactNumberElem = document.getElementById("contactNumber");
-  const managerNameElem = document.getElementById("managerName");
-  const privacyPolicyElem = document.getElementById("privacyPolicy");
-
   if (onlineStoreElem) {
     onlineStoreElem.firstChild.textContent =
       translations[lang].onlineStore + " ";
@@ -61,13 +71,4 @@ function applyTranslation(lang, translations) {
     .classList.add("isActiveLangBtn");
 
   localStorage.setItem("selectedLanguage", lang);
-}
-
-function setupLanguageButtons(translations) {
-  document.querySelectorAll(".language-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const selectedLang = btn.getAttribute("data-lang");
-      applyTranslation(selectedLang, translations);
-    });
-  });
 }
