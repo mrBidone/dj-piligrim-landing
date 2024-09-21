@@ -343,6 +343,10 @@ body {
   cursor: pointer;
 }
 
+.isActiveLangBtn {
+  color: #0f0f0f;
+}
+
 .footer {
   padding: 15px 0 20px 0;
   background-color: var(--main-bg-color);

@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script type="module" src="./js/change-language.js"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -177,9 +178,12 @@
             <ul class="offers-list">
               <li class="offers-list-item">
                 <a class="offers-link-flex-wrapper"
-                  ><p>
-                    Онлайн магазин <span style="color: #565656">(скоро)</span>
+                  ><p id="onlineStore">
+                    <span id="onlineStoreNotice" style="color: #565656"
+                      ></span
+                    >
                   </p>
+
                   <div class="offers-link-icon-thumb">
                     <svg width="13" height="12">
                       <use href="./img/svg/sprite.svg#icon-link-arrow"></use>
@@ -189,7 +193,7 @@
               </li>
               <li class="offers-list-item">
                 <a class="offers-link-flex-wrapper" id="toggle-menu" href=""
-                  ><p>Слушать онлайн</p>
+                  ><p id="musicPlatforms"></p>
                   <div class="offers-link-icon-thumb" id="activeIconThumb">
                     <svg width="4" height="18">
                       <use href="./img/svg/sprite.svg#icon-points"></use>
@@ -280,7 +284,7 @@
               </li>
               <li class="offers-list-item">
                 <a class="offers-link-flex-wrapper" id="modal-open" href=""
-                  ><p>PR & booking</p>
+                  ><p id="booking"></p>
                   <div class="offers-link-icon-thumb">
                     <svg width="4" height="18">
                       <use href="./img/svg/sprite.svg#icon-points"></use>
@@ -399,13 +403,19 @@
             <h2 class="visually-hidden">Language toogle</h2>
             <ul class="language-btn-list">
               <li class="language-btn-list-item">
-                <button class="language-btn" type="button">English</button>
+                <button class="language-btn" data-lang="en" type="button">
+                  English
+                </button>
               </li>
               <li class="language-btn-list-item">
-                <button class="language-btn" type="button">O'zbekcha</button>
+                <button class="language-btn" data-lang="uz" type="button">
+                  O'zbekcha
+                </button>
               </li>
               <li class="language-btn-list-item">
-                <button class="language-btn" type="button">Русский</button>
+                <button class="language-btn" data-lang="ru" type="button">
+                  Русский
+                </button>
               </li>
             </ul>
           </div>
@@ -415,7 +425,10 @@
     <footer class="footer">
       <div class="container">
         <p class="privacy-policy">
-          2009-<span></span>, Piligrim Records. Все права защищены
+          2009-<span></span>, Piligrim Records.
+          </br><span id="privacyPolicy"
+            ></span
+          >
         </p>
       </div>
     </footer>
@@ -423,11 +436,11 @@
     <div class="backdrop isHidden" id="data-modal">
       <div class="modal-window">
         <div class="modal-window-content">
-          <h2 class="modal-title">Менеджер</h2>
-          <p class="modal-subtitle">Лола Игамбердыева</p>
+          <h2 class="modal-title" id="concertManager"></h2>
+          <p class="modal-subtitle" id="managerName"></p>
           <ul class="contact-list">
             <li class="contact-list-item">
-              <span class="contact-list-title">Телефон</span>
+              <span class="contact-list-title" id="contactNumber"></span>
               <a href="tel:+998908069797"
                 ><p class="contact-list-descr">+998908069797</p></a
               >
@@ -461,6 +474,7 @@
     <script type="module" src="./js/toggle-menu.js"></script>
     <script type="module" src="./js/modal.js"></script>
     <script type="module" src="./js/scroll.js"></script>
+
     <script defer>
       window.addEventListener("load", function () {
         const currentYear = new Date().getFullYear();

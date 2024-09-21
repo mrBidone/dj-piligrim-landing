@@ -1,0 +1,32 @@
+{
+    "ru": {
+        "onlineStore": "Онлайн магазин",
+        "onlineStoreNotice": "(скоро)",
+        "musicPlatforms": "Слушать онлайн",
+        "booking": "PR & booking",
+        "concertManager": "Менеджер",
+        "contactNumber": "Телефон",
+        "managerName": "Лола Игамбердыева",
+        "privacyPolicy": "Все права защищены"
+    },
+    "en": {
+        "onlineStore": "Shop Online",
+        "onlineStoreNotice": "(soon)",
+        "musicPlatforms": "Music Platforms",
+        "booking": "PR & booking",
+        "concertManager": "Concert manager",
+        "contactNumber": "Contact number",
+        "managerName": "Lola Igamberdyeva",
+        "privacyPolicy": "All rights reserved."
+    },
+    "uz": {
+        "onlineStore": "Onlayn Do'kon",
+        "onlineStoreNotice": "(yaqinda)",
+        "musicPlatforms": "Musiqa Platformalari",
+        "booking": "PR va buyurtma",
+        "concertManager": "Konsert menejeri",
+        "contactNumber": "Murojaat raqami",
+        "managerName": "Lola Igamberdyeva",
+        "privacyPolicy": "Barcha huquqlar himoyalangan."
+    }
+}
