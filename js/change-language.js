@@ -1,9 +1,9 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   loadTranslations(function (translations) {
     setInitialLanguage(translations);
     setupLanguageButtons(translations);
   });
-};
+});
 
 function loadTranslations(callback) {
   fetch("language-data.json")

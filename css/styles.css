@@ -335,8 +335,8 @@ body {
 .language-btn {
   border: none;
   padding: 0;
-  line-height: 0;
-  font-weight: 600px;
+  line-height: 0%;
+  font-weight: 600;
   font-size: 13px;
   letter-spacing: -0.04em;
   color: var(--secondary-text-color);
