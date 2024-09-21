@@ -335,13 +335,13 @@ body {
 .language-btn {
   border: none;
   padding: 0;
-  line-height: 0%;
+  line-height: normal;
+  background-color: transparent;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: -0.04em;
   color: var(--secondary-text-color);
   cursor: pointer;
-  border: 1px solid black;
 }
 
 .isActiveLangBtn {
