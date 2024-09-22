@@ -155,7 +155,7 @@ body {
   color: var(--main-title-color);
 }
 .swiper-section .section {
-  padding: 15px 0 5px 0;
+  padding: 15px 0 0 0;
 }
 
 .swiper-section {
@@ -246,6 +246,10 @@ body {
 
 .offers-section {
   position: relative;
+}
+
+.offers-section .section {
+  padding: 0 0 15px 0;
 }
 
 .js-bg-color {
