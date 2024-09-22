@@ -9,9 +9,12 @@ const swiperSocialLinks = new Swiper("#swiperSocialLinks", {
   resistanceRatio: 0.8,
   autoplay: false,
   allowTouchMove: true,
-  // on: {
-  //   tap: function () {
-  //     swiperSocialLinks.slideNext();
-  //   },
-  // },
+  breakpoints: {
+    768: {
+      width: 564,
+      enabled: false,
+      slidesPerView: 8,
+      spaceBetween: 2,
+    },
+  },
 });

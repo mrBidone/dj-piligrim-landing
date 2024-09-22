@@ -7,7 +7,6 @@ const contactNumberElem = document.getElementById("contactNumber");
 const managerNameElem = document.getElementById("managerName");
 const privacyPolicyElem = document.getElementById("privacyPolicy");
 
-// Наблюдатель событий при клике на кнопки
 function setupLanguageButtons(translations) {
   document.querySelectorAll(".language-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
