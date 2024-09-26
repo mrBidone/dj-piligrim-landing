@@ -155,16 +155,16 @@
                 </a>
               </li>
               <li class="offers-list-item">
-                <a class="offers-link-flex-wrapper" id="toggle-menu" href=""
+                <a class="offers-link-flex-wrapper" id="toggle-listening-menu" href=""
                   ><p id="musicPlatforms"></p>
-                  <div class="offers-link-icon-thumb" id="activeIconThumb">
+                  <div class="offers-link-icon-thumb activeIconThumb">
                     <svg width="4" height="18">
                       <use href="./img/svg/sprite.svg#icon-points"></use>
                     </svg>
                   </div>
                 </a>
                 <div class="sub-menu" id="listening-menu">
-                  <ul class="listening-links-list" id="listening-links-list">
+                  <ul class="sub-menu-list" id="listening-links-list">
                     <li class="listening-links-item">
                       <a
                         class="listening-links-wrapper"
@@ -246,14 +246,46 @@
                 </div>
               </li>
               <li class="offers-list-item">
-                <a class="offers-link-flex-wrapper" id="modal-open" href=""
+                <a class="offers-link-flex-wrapper" id="toggle-booking-menu" href=""
                   ><p id="booking"></p>
-                  <div class="offers-link-icon-thumb">
+                  <div class="offers-link-icon-thumb activeIconThumb">
                     <svg width="4" height="18">
                       <use href="./img/svg/sprite.svg#icon-points"></use>
                     </svg>
                   </div>
                 </a>
+                <div class="sub-menu" id="booking-menu">
+                  <div class="modal-window-content">
+                    <h2 class="modal-title" id="concertManager"></h2>
+                      <p class="modal-subtitle" id="managerName"></p>
+                      <ul class="contact-list">
+                        <li class="contact-list-item">
+                          <span class="contact-list-title" id="contactNumber"></span>
+                          <a href="tel:+998908069797"
+                            ><p class="contact-list-descr">+998908069797</p></a
+                          >
+                        </li>
+                        <li class="contact-list-item">
+                          <span class="contact-list-title">WhatsApp</span>
+                          <a href="https://wa.me/+998908069797"
+                            ><p class="contact-list-descr">+998908069797</p></a
+                          >
+                        </li>
+                        <li class="contact-list-item">
+                          <span class="contact-list-title">Telegram</span>
+                          <a href="https://t.me/@bookdjpiligrim"
+                            ><p class="contact-list-descr">@bookdjpiligrim</p></a
+                          >
+                        </li>
+                        <li class="contact-list-item">
+                          <span class="contact-list-title">E-mail</span>
+                          <a href="mailto:booking@djpiligrim.com"
+                            ><p class="contact-list-descr">booking@djpiligrim.com</p></a
+                          >
+                        </li>
+                      </ul>
+                  </div>
+                </div>
               </li>
               <li class="offers-list-item">
                 <a class="offers-link-flex-wrapper" href="https://7keys.space"
@@ -396,7 +428,7 @@
       </div>
     </footer>
 
-    <div class="backdrop isHidden" id="data-modal">
+    <!-- <div class="backdrop isHidden" id="data-modal">
       <div class="modal-window">
         <div class="modal-window-content">
           <h2 class="modal-title" id="concertManager"></h2>
@@ -429,7 +461,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <link
       rel="stylesheet"
@@ -439,7 +471,7 @@
     <script type="module" src="./js/hero-swiper.js"></script>
     <script type="module" src="./js/social-links-swiper.js"></script>
     <script type="module" src="./js/toggle-menu.js"></script>
-    <script type="module" src="./js/modal.js"></script>
+    <!-- <script type="module" src="./js/modal.js"></script> -->
     <script type="module" src="./js/scroll.js"></script>
 
     <script defer>

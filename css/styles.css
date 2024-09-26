@@ -305,7 +305,7 @@ body {
   max-height: 500px;
   transition: opacity 0.4s ease, max-height 0.4s ease;
 }
-.listening-links-list {
+.sub-menu-list {
   background-color: rgba(0, 0, 0, 0.61);
   border-radius: 20px;
   margin-top: 10px;
@@ -427,7 +427,7 @@ body {
 }
 
 /* MOdal-window */
-.backdrop {
+/* .backdrop {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -458,6 +458,16 @@ body {
 }
 .no-scroll {
   overflow: hidden;
+} */
+
+.modal-window-content {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.61);
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  border-radius: 16px;
+  margin-top: 10px;
 }
 
 .modal-title {
@@ -467,6 +477,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
   margin-bottom: 5px;
 }
+
 .modal-subtitle {
   font-weight: 600;
   font-size: 28px;
@@ -474,11 +485,6 @@ body {
   margin-bottom: 8px;
 }
 
-.modal-window-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .contact-list {
   display: flex;
   flex-direction: column;
@@ -513,8 +519,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .offers-link-flex-wrapper:hover,
-  .offers-link-flex-wrapper:focus {
+  .offers-link-flex-wrapper:hover {
     background-color: var(--offers-list-hover-color);
   }
   .social-link-container .section {
