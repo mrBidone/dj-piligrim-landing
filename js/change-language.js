@@ -1,6 +1,8 @@
 const onlineStoreElem = document.getElementById("onlineStore");
 const onlineStoreNoticeElem = document.getElementById("onlineStoreNotice");
 const musicPlatformsElem = document.getElementById("musicPlatforms");
+const vkMusicElem = document.getElementById("vkMusic");
+const yaMusicElem = document.getElementById("yaMusic");
 const bookingElem = document.getElementById("booking");
 const concertManagerElem = document.getElementById("concertManager");
 const contactNumberElem = document.getElementById("contactNumber");
@@ -52,6 +54,8 @@ function applyTranslation(lang, translations) {
 
   if (musicPlatformsElem)
     musicPlatformsElem.textContent = translations[lang].musicPlatforms;
+  if (vkMusicElem) vkMusicElem.textContent = translations[lang].vkMusic;
+  if (yaMusicElem) yaMusicElem.textContent = translations[lang].yaMusic;
   if (bookingElem) bookingElem.textContent = translations[lang].booking;
   if (concertManagerElem)
     concertManagerElem.textContent = translations[lang].concertManager;
