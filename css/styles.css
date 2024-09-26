@@ -465,7 +465,7 @@ body {
   background-color: rgba(0, 0, 0, 0.61);
   flex-direction: column;
   align-items: center;
-  padding: 32px;
+  padding: 30px 24px 38px 24px;
   border-radius: 16px;
   margin-top: 10px;
 }
@@ -533,7 +533,7 @@ body {
     padding: 0 10px 0 10px;
   }
   .footer {
-    padding: 15px 0 90px 0;
+    padding: 15px 0 60px 0;
     background-color: var(--main-bg-color);
   }
 }
