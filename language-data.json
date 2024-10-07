@@ -1,9 +1,9 @@
 {
     "ru": {
-        "onlineStore": "Онлайн магазин",
-        "onlineStoreNotice": "(скоро)",
-        "musicPlatforms": "Слушать онлайн",
-        "booking": "PR & booking",
+        "onlineStore": "онлайн магазин",
+        "onlineStoreNotice": "скоро",
+        "musicPlatforms": "слушать онлайн",
+        "booking": "организация концертов",
         "concertManager": "Менеджер",
         "contactNumber": "Телефон",
         "managerName": "Лола Игамбердыева",
@@ -12,9 +12,9 @@
         "yaMusic": "Яндекс.Музыка"
     },
     "en": {
-        "onlineStore": "Shop Online",
-        "onlineStoreNotice": "(soon)",
-        "musicPlatforms": "Music Platforms",
+        "onlineStore": "shop Online",
+        "onlineStoreNotice": "soon",
+        "musicPlatforms": "music Platforms",
         "booking": "PR & booking",
         "concertManager": "Concert manager",
         "contactNumber": "Contact number",
@@ -24,9 +24,9 @@
         "yaMusic": "Yandex.Music"
     },
     "uz": {
-        "onlineStore": "Onlayn Do'kon",
-        "onlineStoreNotice": "(yaqinda)",
-        "musicPlatforms": "Musiqa Platformalari",
+        "onlineStore": "onlayn Do'kon",
+        "onlineStoreNotice": "yaqinda",
+        "musicPlatforms": "musiqa Platformalari",
         "booking": "PR va buyurtma",
         "concertManager": "Konsert menejeri",
         "contactNumber": "Murojaat raqami",
