@@ -1,25 +1,40 @@
-// Обработчик для кнопки "toggle-listening-menu"
 document
   .getElementById("toggle-listening-menu")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Отключаем переход по ссылке
+    event.preventDefault();
 
-    const menu = document.getElementById("listening-menu");
-    const thumbIcon = this.querySelector(".activeIconThumb"); // Поиск иконки внутри текущей кнопки
+    const listeningMenu = document.getElementById("listening-menu");
+    const bookingMenu = document.getElementById("booking-menu");
+    const thumbIcon = this.querySelector(".activeIconThumb");
+    const bookingThumbIcon = document
+      .getElementById("toggle-booking-menu")
+      .querySelector(".activeIconThumb");
 
-    menu.classList.toggle("open");
+    if (bookingMenu.classList.contains("open")) {
+      bookingMenu.classList.remove("open");
+      bookingThumbIcon.classList.remove("isActive");
+    }
+
+    listeningMenu.classList.toggle("open");
     thumbIcon.classList.toggle("isActive");
   });
 
-// Обработчик для кнопки "toggle-booking-menu"
 document
   .getElementById("toggle-booking-menu")
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Отключаем переход по ссылке
+    event.preventDefault();
+    const bookingMenu = document.getElementById("booking-menu");
+    const listeningMenu = document.getElementById("listening-menu");
+    const thumbIcon = this.querySelector(".activeIconThumb");
+    const listeningThumbIcon = document
+      .getElementById("toggle-listening-menu")
+      .querySelector(".activeIconThumb");
 
-    const menu = document.getElementById("booking-menu");
-    const thumbIcon = this.querySelector(".activeIconThumb"); // Поиск иконки внутри текущей кнопки
+    if (listeningMenu.classList.contains("open")) {
+      listeningMenu.classList.remove("open");
+      listeningThumbIcon.classList.remove("isActive");
+    }
 
-    menu.classList.toggle("open");
+    bookingMenu.classList.toggle("open");
     thumbIcon.classList.toggle("isActive");
   });
