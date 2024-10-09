@@ -97,7 +97,7 @@ a {
   --main-bg-color: #56f944;
   /* --main-bg-color: #f1f013; */
   --accent-bg-color: #0f0f0f;
-  --sub-menu-bg-color: #2c6d24;
+  --sub-menu-bg-color: rgba(0, 0, 0, 0.61);
   --main-text-color: #fff4f4;
   --secondary-text-color: rgba(15, 15, 15, 0.4);
   --accent-secondary-text-color: #0f0f0f;
@@ -133,23 +133,12 @@ body {
 }
 
 .page-header {
-  padding: 0 0 0px 0;
-  position: fixed;
-  /* transform: translate(-19px, -39px); */
-  top: -39px;
-  left: -18px;
+  padding: 10px 0 59px 0;
 }
-
-/* .page-header-placeholder {
-  height: 78px; 
-  width: 100%;
-  visibility: hidden; 
-  pointer-events: none;
-} */
 
 .page-header .container {
   max-width: 375px;
-  padding: 0;
+  padding: 0 5px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -160,37 +149,19 @@ body {
 
 .main-title {
   font-weight: 700;
-  font-size: 90px;
+  font-size: 64px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-align: center;
   color: var(--main-title-color);
-  text-wrap: nowrap;
 }
 .swiper-section .section {
   padding: 15px 0 0 0;
 }
 
-/* .swiper-placeholder {
-  height: 564px;
-  width: 100%;
-  visibility: hidden;
-  pointer-events: none;
-} */
-
 .swiper-section {
-  position: fixed;
-  top: 88px;
-  left: 0;
-  z-index: -30;
-  /* transform: translateY(-30px); */
-  /* transition: transform 0.4s ease;
-  transition: transform 0.5s ease, opacity 0.5s ease; */
-  /* transition: transform 0.1s ease, opacity 0.1s ease; */
-}
-
-.jsSectionBg {
-  background-color: var(--main-bg-color);
+  transform: translateY(-30px);
+  transition: transform 0.4s ease;
 }
 
 .fixed {
@@ -301,7 +272,7 @@ body {
   opacity: 0;
 } */
 
-/* .offers-section::before {
+.offers-section::before {
   content: "";
   z-index: 10;
   width: 100%;
@@ -320,7 +291,7 @@ body {
 }
 .fixed-before::before {
   opacity: 1;
-} */
+}
 
 /* swiper pagination */
 .swiper-pagination {
@@ -347,14 +318,12 @@ body {
 }
 
 .offers-section .section {
-  margin-top: 652px;
   padding: 0 0 15px 0;
-  background-color: transparent;
 }
 
-/* .js-bg-color {
+.js-bg-color {
   background-color: var(--main-bg-color);
-} */
+}
 /* =========== Offers-list-Styles =============== */
 
 .offers-list {
