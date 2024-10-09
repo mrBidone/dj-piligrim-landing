@@ -133,7 +133,7 @@ body {
 }
 
 .page-header {
-  padding: 10px 0 59px 0;
+  padding: 10px 0 20px 0;
 }
 
 .page-header .container {
@@ -143,7 +143,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .page-header {
-    padding: 20px 0 59px 0;
+    padding: 20px 0 44px 0;
   }
 }
 
@@ -158,21 +158,6 @@ body {
 .swiper-section .section {
   padding: 15px 0 0 0;
 }
-
-.swiper-section {
-  transform: translateY(-30px);
-  transition: transform 0.4s ease;
-}
-
-.fixed {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  transform: translateY(0);
-}
-
 .track-swiper-list {
   margin-bottom: 31px;
 }
@@ -272,7 +257,7 @@ body {
   opacity: 0;
 } */
 
-.offers-section::before {
+/* .offers-section::before {
   content: "";
   z-index: 10;
   width: 100%;
@@ -291,7 +276,7 @@ body {
 }
 .fixed-before::before {
   opacity: 1;
-}
+} */
 
 /* swiper pagination */
 .swiper-pagination {
@@ -318,7 +303,7 @@ body {
 }
 
 .offers-section .section {
-  padding: 0 0 15px 0;
+  padding: 35px 0 15px 0;
 }
 
 .js-bg-color {
