@@ -226,7 +226,9 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 .play-btn-link {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   border-radius: 100%;
@@ -235,11 +237,9 @@ body {
 }
 
 .play-btn-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+  display: block;
+  width: 17px;
+  height: 17px;
 }
 
 /* swiper pagination */
