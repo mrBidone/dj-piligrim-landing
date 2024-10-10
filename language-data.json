@@ -7,7 +7,6 @@
         "concertManager": "Менеджер",
         "contactNumber": "Телефон",
         "managerName": "Лола Игамбердыева",
-        "privacyPolicy": "Все права защищены",
         "vkMusic": "VK Музыка",
         "yaMusic": "Яндекс.Музыка"
     },
@@ -15,11 +14,10 @@
         "onlineStore": "shop online",
         "onlineStoreNotice": "soon",
         "musicPlatforms": "music platforms",
-        "booking": "PR & booking",
+        "booking": "pr & booking",
         "concertManager": "Concert manager",
         "contactNumber": "Contact number",
         "managerName": "Lola Igamberdyeva",
-        "privacyPolicy": "All rights reserved.",
         "vkMusic": "VK Music",
         "yaMusic": "Yandex.Music"
     },
@@ -27,11 +25,10 @@
         "onlineStore": "onlayn do'kon",
         "onlineStoreNotice": "yaqinda",
         "musicPlatforms": "musiqa platformalari",
-        "booking": "PR va buyurtma",
+        "booking": "pr va buyurtma",
         "concertManager": "Konsert menejeri",
         "contactNumber": "Murojaat raqami",
         "managerName": "Lola Igamberdyeva",
-        "privacyPolicy": "Barcha huquqlar himoyalangan.",
         "vkMusic": "VK Музыка",
         "yaMusic": "Яндекс.Музыка"
     }

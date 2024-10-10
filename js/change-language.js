@@ -7,7 +7,6 @@ const bookingElem = document.getElementById("booking");
 const concertManagerElem = document.getElementById("concertManager");
 const contactNumberElem = document.getElementById("contactNumber");
 const managerNameElem = document.getElementById("managerName");
-const privacyPolicyElem = document.getElementById("privacyPolicy");
 
 function setupLanguageButtons(translations) {
   document.querySelectorAll(".language-btn").forEach((btn) => {
@@ -63,8 +62,6 @@ function applyTranslation(lang, translations) {
     contactNumberElem.textContent = translations[lang].contactNumber;
   if (managerNameElem)
     managerNameElem.textContent = translations[lang].managerName;
-  if (privacyPolicyElem)
-    privacyPolicyElem.innerHTML = translations[lang].privacyPolicy;
 
   document
     .querySelectorAll(".language-btn")
