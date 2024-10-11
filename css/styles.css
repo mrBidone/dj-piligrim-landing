@@ -212,7 +212,7 @@ body {
   flex-wrap: wrap;
   align-items: flex-end;
   gap: 4px;
-  max-width: 129px;
+  max-width: 188px;
   font-weight: 600;
   font-size: 13px;
   line-height: 0.7;
@@ -318,6 +318,7 @@ body {
   padding: 7px 14px 9px 14px;
   background-color: rgba(255, 255, 255, 0.1);
   margin-left: 8px;
+  margin-top: 2px;
 }
 /* Listening-link-list styles */
 
@@ -427,6 +428,7 @@ body {
   letter-spacing: -0.04em;
   color: var(--secondary-text-color);
   cursor: pointer;
+  transition: color 250ms linear;
 }
 
 .language-btn-list::before {
@@ -468,7 +470,7 @@ body {
 .footer .container {
   max-width: 335px;
   padding: 42px 10px 24px 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .privacy-policy {
@@ -479,7 +481,7 @@ body {
   letter-spacing: -0.04em;
   margin: 0 auto;
   text-align: center;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.15);
 }
 
 /* MOdal-window */
@@ -575,6 +577,14 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .language-btn:hover {
+    color: rgba(15, 15, 15, 0.5);
+  }
+
+  .language-btn.isActiveLangBtn:hover {
+    color: #0f0f0f;
+  }
+
   .offers-link-flex-wrapper:hover {
     background-color: var(--offers-list-hover-color);
   }
