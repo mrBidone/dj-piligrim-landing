@@ -210,6 +210,7 @@ body {
 .swiper-keywords-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   gap: 4px;
   max-width: 129px;
   font-weight: 600;
@@ -226,21 +227,11 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 .play-btn-link {
-  position: relative;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
   width: 48px;
   height: 48px;
-  border-radius: 100%;
-  background-color: #fff;
-  fill: rgba(15, 15, 15, 0.5);
-}
-
-.play-btn-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-left: 2px;
-  display: block;
 }
 
 /* swiper pagination */
