@@ -119,11 +119,15 @@ body {
   font-size: 18px;
   color: #fff4f4;
   background-color: var(--main-bg-color);
+  background-image: url("../img/dj-piligrim-mob-bg.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container {
   max-width: 375px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -132,31 +136,32 @@ body {
   background-color: var(--main-bg-color);
 }
 
-.page-header {
-  padding: 10px 0 20px 0;
+/* .page-header {
+  padding: px 0 20px 0;
 }
 
 .page-header .container {
   max-width: 375px;
   padding: 0 5px;
-}
+} */
 
 @media only screen and (min-width: 768px) {
-  .page-header {
+  /* .page-header {
     padding: 20px 0 44px 0;
-  }
+  } */
 }
 
-.main-title {
+/* .main-title {
   font-weight: 700;
   font-size: 64px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-align: center;
   color: var(--main-title-color);
-}
+} */
 .swiper-section .section {
-  padding: 15px 0 0 0;
+  margin-top: 110px;
+  padding: 10px 0 0 0;
 }
 .track-swiper-list {
   margin-bottom: 31px;
@@ -205,7 +210,6 @@ body {
 .swiper-down-content-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 .swiper-keywords-list {
   display: flex;
@@ -225,13 +229,18 @@ body {
   border-radius: 10px;
   padding: 5px 10px 7px 10px;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms linear;
 }
+
 .play-btn-link {
   line-height: 0;
   margin: 0;
   padding: 0;
   width: 48px;
   height: 48px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
+  transition: background-color 250ms linear;
 }
 
 /* swiper pagination */
@@ -368,7 +377,7 @@ body {
 .social-link-container {
   overflow: visible;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .social-link-container .section {
@@ -577,6 +586,23 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    background-image: url("../img/dj-piligrim-desk-bg.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .swiper-section .section {
+    margin-top: 120px;
+    padding: 20px 0 0 0;
+  }
+
+  .play-btn-link:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  .swiper-keywords-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
   .language-btn:hover {
     color: rgba(15, 15, 15, 0.5);
   }
