@@ -220,6 +220,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.swiper-keywords-list-width {
+  max-width: 173px;
+}
+
 .swiper-keywords-item {
   display: inline-block;
   border-radius: 10px;
@@ -308,8 +312,8 @@ body {
 }
 
 .offers-link-icon {
-  fill: red;
-  stroke: red;
+  fill: #fff4f4;
+  stroke: #fff4f4;
 }
 
 .online-store-wrapper {
