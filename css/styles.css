@@ -95,7 +95,6 @@ a {
 
 :root {
   --main-bg-color: #56f944;
-  /* --main-bg-color: #f1f013; */
   --accent-bg-color: #0f0f0f;
   --sub-menu-bg-color: rgba(0, 0, 0, 0.61);
   --main-text-color: #fff4f4;
@@ -103,9 +102,7 @@ a {
   --accent-secondary-text-color: #0f0f0f;
   --main-title-color: #000;
   --grey-text-color: rgba(255, 255, 255, 0.3);
-  --gradient-first-point: rgba(241, 241, 19, 0);
   --backdrop-color: rgba(86, 249, 68, 0.8);
-  /* --backdrop-color: rgba(241, 240, 19, 0.8); */
   --offers-list-hover-color: #162615;
 }
 
