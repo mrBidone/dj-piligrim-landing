@@ -8,7 +8,15 @@
         "contactNumber": "Телефон",
         "managerName": "Лола Игамбердыева",
         "vkMusic": "VK Музыка",
-        "yaMusic": "Яндекс.Музыка"
+        "yaMusic": "Яндекс.Музыка",
+        "new": "новое",
+        "single": "сингл",
+        "bandlink": "bandlink",
+        "firstToListen": "слушай первым",
+        "watch": "смотри",
+        "hit": "хит",
+        "yourChoice": "твой выбор",
+        "favourite": "любимое"
     },
     "en": {
         "onlineStore": "shop online",
@@ -19,7 +27,15 @@
         "contactNumber": "Contact number",
         "managerName": "Lola Igamberdyeva",
         "vkMusic": "VK Music",
-        "yaMusic": "Yandex.Music"
+        "yaMusic": "Yandex.Music",
+        "new": "new",
+        "single": "single",
+        "bandlink": "bandlink",
+        "firstToListen": "be the first to listen",
+        "watch": "watch",
+        "hit": "hit",
+        "yourChoice": "your choice",
+        "favourite": "favourite"
     },
     "uz": {
         "onlineStore": "onlayn do'kon",
@@ -30,6 +46,14 @@
         "contactNumber": "Murojaat raqami",
         "managerName": "Lola Igamberdyeva",
         "vkMusic": "VK Музыка",
-        "yaMusic": "Яндекс.Музыка"
+        "yaMusic": "Яндекс.Музыка",
+        "new": "yangi",
+        "single": "singl",
+        "bandlink": "bandlink",
+        "firstToListen": "birinchi bo'lib tingla",
+        "watch": "tomosha qil",
+        "hit": "xit",
+        "yourChoice": "sening tanloving",
+        "favourite": "sevimli"
     }
 }
