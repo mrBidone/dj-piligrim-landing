@@ -1,6 +1,6 @@
 {
     "themes": {
-        "green": {
+        "GREEN": {
             "mainBgColor": "#56f944",
             "accentBgColor": "#0f0f0f",
             "subMenuBgColor": "rgba(0, 0, 0, 0.61)",
@@ -11,9 +11,11 @@
             "greyTextColor": "rgba(255, 255, 255, 0.3)",
             "gradientFirstPoint": "rgba(241, 241, 19, 0)",
             "backdropColor": "rgba(86, 249, 68, 0.8)",
-            "offersListHoverColor": "#162615"
+            "offersListHoverColor": "#162615",
+            "additionalBackgroundImage": "none",
+            "additionalDesktopBackgroundImage": "none"
         },
-        "yellow": {
+        "YELLOW": {
             "mainBgColor": "#f1f013",
             "accentBgColor": "#0f0f0f",
             "subMenuBgColor": "rgba(0, 0, 0, 0.61)",
@@ -24,21 +26,24 @@
             "greyTextColor": "rgba(255, 255, 255, 0.3)",
             "gradientFirstPoint": "rgba(241, 241, 19, 0)",
             "backdropColor": "rgba(241, 240, 19, 0.8)",
-            "offersListHoverColor": "#162615"
+            "offersListHoverColor": "#162615",
+            "additionalBackgroundImage": "none",
+            "additionalDesktopBackgroundImage": "none"
         },
-        "multicolor": {
-            "mainBgColor": "#e1bee7",
-            "accentBgColor": "#7b1fa2",
-            "subMenuBgColor": "rgba(123, 31, 162, 0.61)",
-            "mainTextColor": "#ab47bc",
-            "secondaryTextColor": "rgba(123, 31, 162, 0.4)",
-            "accentSecondaryTextColor": "#7b1fa2",
-            "mainTitleColor": "#6a1b9a",
+        "MULTICOLOR": {
+            "mainBgColor": "#ffffff",
+            "accentBgColor": "#FFF4F4",
+            "mainTextColor": "#0F0F0F",
+            "secondaryTextColor": "rgba(15, 15, 15, 0.4)",
+            "accentSecondaryTextColor": "#0f0f0f",
+            "mainTitleColor": "#000",
             "greyTextColor": "rgba(255, 255, 255, 0.3)",
-            "gradientFirstPoint": "rgba(156, 39, 176, 0)",
-            "backdropColor": "rgba(233, 30, 99, 0.8)",
-            "offersListHoverColor": "#ba68c8"
+            "gradientFirstPoint": "rgba(241, 241, 19, 0)",
+            "backdropColor": "rgba(241, 240, 19, 0.8)",
+            "offersListHoverColor": "#162615",
+            "additionalBackgroundImage": "url('')",
+            "additionalDesktopBackgroundImage": "url('')"
         }
     },
-    "current-theme": "yellow"
+    "current-theme": "GREEN"
 }

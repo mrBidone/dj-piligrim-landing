@@ -102,7 +102,6 @@ a {
   --accent-secondary-text-color: #0f0f0f;
   --main-title-color: #000;
   --grey-text-color: rgba(255, 255, 255, 0.3);
-  --backdrop-color: rgba(86, 249, 68, 0.8);
   --offers-list-hover-color: #162615;
 }
 
@@ -114,7 +113,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: #fff4f4;
+  color: var(--main-text-color);
   background-color: var(--main-bg-color);
   background-image: url("../img/dj-piligrim-mob-bg.svg");
   background-position: top center;
@@ -306,6 +305,11 @@ body {
 
 .offers-link-icon-thumb.isActive {
   background-color: #2e2e2e;
+}
+
+.offers-link-icon {
+  fill: red;
+  stroke: red;
 }
 
 .online-store-wrapper {

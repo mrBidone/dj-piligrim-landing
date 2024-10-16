@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadThemeSettings() {
-  fetch("../data/themes-data.json")
+  fetch("themes-data.json")
     .then((response) => response.json())
     .then((data) => {
-      const currentTheme = data["current-theme"]; // Текущая тема берется из JSON
+      const currentTheme = data["current-theme"];
       applyTheme(currentTheme, data);
     })
     .catch((error) => console.error("Ошибка загрузки тем:", error));
@@ -60,6 +60,29 @@ function applyTheme(themeName, data) {
       "--offers-list-hover-color",
       theme.offersListHoverColor
     );
+
+    const mobileBackgroundImage = theme.additionalBackgroundImage || "none";
+    const desktopBackgroundImage =
+      theme.additionalDesktopBackgroundImage || "none";
+
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+    function setBackground() {
+      if (mediaQuery.matches) {
+        document.body.style.backgroundImage = `url('../img/dj-piligrim-desk-bg.svg'), ${desktopBackgroundImage}`;
+        document.body.style.backgroundPosition = "top center, top center";
+        document.body.style.backgroundRepeat = "no-repeat, no-repeat";
+        document.body.style.backgroundSize = "auto, cover";
+      } else {
+        document.body.style.backgroundImage = `url('../img/dj-piligrim-mob-bg.svg'), ${mobileBackgroundImage}`;
+        document.body.style.backgroundPosition = "top center, top center";
+        document.body.style.backgroundRepeat = "no-repeat, no-repeat";
+        document.body.style.backgroundSize = "contain, cover";
+      }
+    }
+    setBackground();
+
+    mediaQuery.addListener(setBackground);
   } else {
     console.error("Тема не найдена:", themeName);
   }

@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadTranslations(callback) {
-  fetch("../data/language-data.json")
+  fetch("language-data.json")
     .then((response) => response.json())
     .then((data) => callback(data))
     .catch((error) => console.error("Ошибка загрузки переводов:", error));
