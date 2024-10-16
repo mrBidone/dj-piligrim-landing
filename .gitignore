@@ -131,3 +131,5 @@ dist
 .DS_Store
 *.zip
 .DS_Store
+.DS_Store
+img/.DS_Store
