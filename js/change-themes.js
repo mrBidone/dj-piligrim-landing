@@ -21,12 +21,16 @@ function applyTheme(themeName, data) {
       theme.mainBgColor
     );
     document.documentElement.style.setProperty(
-      "--accent-bg-color",
-      theme.accentBgColor
+      "--offers-links-bg-color",
+      theme.offersLinksBgColor
     );
     document.documentElement.style.setProperty(
       "--sub-menu-bg-color",
       theme.subMenuBgColor
+    );
+    document.documentElement.style.setProperty(
+      "--cards-bg-color",
+      theme.cardsBgColor
     );
     document.documentElement.style.setProperty(
       "--main-text-color",
@@ -45,6 +49,14 @@ function applyTheme(themeName, data) {
       theme.mainTitleColor
     );
     document.documentElement.style.setProperty(
+      "--language-btn-text-color",
+      theme.languageBtnTextColor
+    );
+    document.documentElement.style.setProperty(
+      "--language-btn-dot-color",
+      theme.languageBtnAfterDot
+    );
+    document.documentElement.style.setProperty(
       "--grey-text-color",
       theme.greyTextColor
     );
@@ -59,6 +71,10 @@ function applyTheme(themeName, data) {
     document.documentElement.style.setProperty(
       "--offers-list-hover-color",
       theme.offersListHoverColor
+    );
+    document.documentElement.style.setProperty(
+      "--offers-list-icon-color",
+      theme.offersListIconColor
     );
 
     const mobileBackgroundImage = theme.additionalBackgroundImage || "none";
