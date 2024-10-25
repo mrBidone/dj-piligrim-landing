@@ -69,12 +69,12 @@ function applyTheme(themeName, data) {
 
     function setBackground() {
       if (mediaQuery.matches) {
-        document.body.style.backgroundImage = `url('../img/dj-piligrim-desk-bg.svg'), ${desktopBackgroundImage}`;
+        document.body.style.backgroundImage = `url('./img/dj-piligrim-desk-bg.svg'), ${desktopBackgroundImage}`;
         document.body.style.backgroundPosition = "top center, top center";
         document.body.style.backgroundRepeat = "no-repeat, no-repeat";
         document.body.style.backgroundSize = "auto, cover";
       } else {
-        document.body.style.backgroundImage = `url('../img/dj-piligrim-mob-bg.svg'), ${mobileBackgroundImage}`;
+        document.body.style.backgroundImage = `url('./img/dj-piligrim-mob-bg.svg'), ${mobileBackgroundImage}`;
         document.body.style.backgroundPosition = "top center, top center";
         document.body.style.backgroundRepeat = "no-repeat, no-repeat";
         document.body.style.backgroundSize = "contain, cover";

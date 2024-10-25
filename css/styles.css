@@ -95,14 +95,15 @@ a {
 
 :root {
   --main-bg-color: #56f944;
-  --accent-bg-color: #0f0f0f;
+  --offers-links-bg-color: #0f0f0f;
+  --cards-bg-color: #2c6d24;
   --sub-menu-bg-color: rgba(0, 0, 0, 0.61);
   --main-text-color: #fff4f4;
-  --secondary-text-color: rgba(15, 15, 15, 0.4);
+  --language-btn-text-color: rgba(15, 15, 15, 0.4);
   --accent-secondary-text-color: #0f0f0f;
-  --main-title-color: #000;
   --grey-text-color: rgba(255, 255, 255, 0.3);
   --offers-list-hover-color: #162615;
+  --offers-list-icon-color: #fff4f4;
 }
 
 html {
@@ -169,7 +170,7 @@ body {
   max-width: 355px;
   border-radius: 20px;
   padding: 20px 20px 30px 20px;
-  background-color: #2c6d24;
+  background-color: var(--cards-bg-color);
 }
 
 .track-swiper-img {
@@ -293,7 +294,7 @@ body {
   width: 100%;
   padding: 8px 9px 8px 34px;
   letter-spacing: -0.04em;
-  background-color: var(--accent-bg-color);
+  background-color: var(--offers-links-bg-color);
   border-radius: 88px;
   transition: background-color 250ms linear;
 }
@@ -312,8 +313,8 @@ body {
 }
 
 .offers-link-icon {
-  fill: #fff4f4;
-  stroke: #fff4f4;
+  fill: var(--offers-list-icon-color);
+  stroke: var(--offers-list-icon-color);
 }
 
 .online-store-wrapper {
@@ -440,7 +441,7 @@ body {
   font-weight: 600;
   font-size: 13px;
   letter-spacing: -0.04em;
-  color: var(--secondary-text-color);
+  color: var(--language-btn-text-color);
   cursor: pointer;
   transition: color 250ms linear;
 }
