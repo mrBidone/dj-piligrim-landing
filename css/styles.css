@@ -94,17 +94,17 @@ a {
 }
 
 :root {
-  --main-bg-color: ;
-  --offers-links-bg-color: ;
-  --cards-bg-color: ;
-  --sub-menu-bg-color: ;
-  --main-text-color: ;
-  --language-btn-text-color: ;
-  --language-btn-dot-color: ;
-  --accent-secondary-text-color: ;
+  --main-bg-color: #000020;
+  --offers-links-bg-color: #191936;
+  --sub-menu-bg-color: #000020;
+  --main-text-color: #fff4f4;
+  --language-btn-text-color: rgba(255, 255, 255, 0.4);
+  --language-btn-dot-color: rgba(255, 255, 255, 0.7);
+  --accent-secondary-text-color: rgba(255, 244, 244, 0.4);
   --grey-text-color: rgba(255, 255, 255, 0.3);
   --offers-list-hover-color: #162615;
-  --offers-list-icon-color: ;
+  --offers-list-icon-color: #fff4f4;
+  --social-list-icon-color: #ffffff;
 }
 
 html {
@@ -117,10 +117,26 @@ body {
   font-size: 18px;
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
-  background-image: url("../img/dj-piligrim-mob-bg.svg");
-  background-position: top center;
+}
+
+body::before {
+  display: block;
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/svg/mob-bg-gradient.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-position: top 92px center;
+  background-size: 574px 654px; */
+  z-index: -10;
+}
+
+.content {
+  position: relative;
+  z-index: 2; /* Контент на переднем плане */
 }
 
 .container {
@@ -131,115 +147,43 @@ body {
 
 .section {
   padding: 15px 0;
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
 }
 
-.swiper-section .section {
-  margin-top: 110px;
-  padding: 10px 0 0 0;
-}
-.track-swiper-list {
-  margin-bottom: 31px;
+.hero-section {
+  padding: 20px 0;
 }
 
-/* Swiper item  */
-
-.swiper-item-container {
-  max-width: 355px;
-  border-radius: 20px;
-  padding: 20px 20px 30px 20px;
-  background-color: var(--cards-bg-color);
-}
-
-.track-swiper-img {
-  border-radius: 12px;
-  margin-bottom: 20px;
-}
-.swiper-title-wrapper {
+.hero-section .section {
+  padding: 60px 0 20px 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
-.swiper-item-title {
+
+.avatar-thumb {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+.official-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+}
+.main-title {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: -0.04em;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
 }
-.swiper-item-time {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
+.hero-descr {
+  max-width: 255px;
+  font-size: 15px;
   letter-spacing: -0.04em;
-  color: rgba(255, 255, 255, 0.4);
-}
-.swiper-item-subtitle {
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: -0.04em;
-  line-height: 22px;
-  color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 20px;
-}
-.swiper-down-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.swiper-keywords-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: 4px;
-  max-width: 221px;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 0.7;
-  letter-spacing: -0.04em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.swiper-keywords-list-width {
-  max-width: 173px;
-}
-
-.swiper-keywords-item {
-  display: inline-block;
-  border-radius: 10px;
-  padding: 5px 10px 7px 10px;
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms linear;
-}
-
-.play-btn-link {
-  line-height: 0;
-  margin: 0;
-  padding: 0;
-  width: 48px;
-  height: 48px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 100px;
-  transition: background-color 250ms linear;
-}
-
-/* swiper pagination */
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-}
-
-.swiper-pagination-bullet-custom {
-  width: 5px;
-  height: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
-  border-radius: 100%;
-}
-
-.swiper-pagination-bullet-active-custom {
-  background-color: #000;
+  text-align: center;
+  color: var(--accent-secondary-text-color);
 }
 
 .offers-section {
@@ -247,7 +191,7 @@ body {
 }
 
 .offers-section .section {
-  padding: 35px 0 15px 0;
+  padding: 20px 0 15px 0;
 }
 
 .js-bg-color {
@@ -270,11 +214,13 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
+  height: 66px;
   padding: 8px 9px 8px 34px;
   letter-spacing: -0.04em;
   background-color: var(--offers-links-bg-color);
   border-radius: 88px;
   transition: background-color 250ms linear;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .offers-link-icon-thumb {
   display: flex;
@@ -287,7 +233,7 @@ body {
 }
 
 .offers-link-icon-thumb.isActive {
-  background-color: #2e2e2e;
+  background-color: #000020;
 }
 
 .offers-link-icon {
@@ -306,10 +252,11 @@ body {
   font-size: 13px;
   line-height: 0.7;
   letter-spacing: -0.04em;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
   padding: 7px 14px 9px 14px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-left: 8px;
   margin-top: 2px;
 }
@@ -382,9 +329,11 @@ body {
   height: 67px;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
   border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: background-color 250ms linear;
+  fill: var(--social-list-icon-color);
 }
 
 .language-btn-list {
@@ -434,18 +383,17 @@ body {
 }
 
 .isActiveLangBtn {
-  color: #0f0f0f;
+  color: #ffffff;
 }
 
 .footer {
   padding: 15px 0 20px 0;
-  background-color: var(--main-bg-color);
 }
 
 .footer .container {
   max-width: 335px;
   padding: 42px 10px 24px 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .privacy-policy {
@@ -456,7 +404,7 @@ body {
   letter-spacing: -0.04em;
   margin: 0 auto;
   text-align: center;
-  color: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .modal-window-content {
