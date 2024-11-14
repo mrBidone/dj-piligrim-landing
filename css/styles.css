@@ -191,7 +191,7 @@ body::before {
 }
 
 .offers-section .section {
-  padding: 20px 0 15px 0;
+  padding: 20px 0 20px 0;
 }
 
 .js-bg-color {
@@ -312,11 +312,15 @@ body::before {
 }
 
 .social-link-container .section {
-  padding: 15px 0 44px 0;
+  padding: 20px 0 25px 0;
 }
 
 .swiper-wrapper {
   position: relative;
+}
+
+.social-list {
+  padding: 9px 0;
 }
 
 .social-list-item {
@@ -387,12 +391,12 @@ body::before {
 }
 
 .footer {
-  padding: 15px 0 20px 0;
+  padding: 15px 0 10px 0;
 }
 
 .footer .container {
   max-width: 335px;
-  padding: 42px 10px 24px 10px;
+  padding: 30px 10px 54px 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -466,36 +470,24 @@ body::before {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    background-image: url("../img/dj-piligrim-desk-bg.svg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: auto;
-  }
-  .swiper-section .section {
-    margin-top: 120px;
-    padding: 20px 0 0 0;
+  body::before {
+    background-image: url("../img/svg/bg-blur.svg");
+    background-position: center;
   }
 
-  .play-btn-link:hover {
-    background-color: rgb(255, 255, 255);
-  }
-  .swiper-keywords-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .language-btn:hover {
+  /* .language-btn:hover {
     color: rgba(15, 15, 15, 0.5);
-  }
+  } */
 
   .language-btn.isActiveLangBtn:hover {
-    color: #0f0f0f;
+    color: #ffffff;
   }
 
   .offers-link-flex-wrapper:hover {
     background-color: var(--offers-list-hover-color);
   }
   .social-link-container .section {
-    padding: 65px 0 44px 0;
+    padding: 20px 0 25px 0;
   }
   .social-link-container.container {
     max-width: 584px;
@@ -504,20 +496,7 @@ body::before {
     overflow: hidden;
     padding: 0 10px 0 10px;
   }
-  .footer {
-    padding: 15px 0 60px 0;
-    background-color: var(--main-bg-color);
-  }
-  .social-link-container .section {
-    padding: 65px 0 44px 0;
-  }
-  .social-link-container.container {
-    max-width: 584px;
-  }
-  .social-link-container {
-    overflow: hidden;
-    padding: 0 10px 0 10px;
-  }
+
   .social-link:hover,
   .social-link:focus {
     background-color: rgba(0, 0, 0, 0.17);
