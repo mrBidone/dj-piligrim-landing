@@ -16,7 +16,8 @@
         "watch": "смотри",
         "hit": "хит",
         "yourChoice": "твой выбор",
-        "favourite": "любимое"
+        "favourite": "любимое",
+        "heroDescr": "Автор и исполнитель своих песен. Продюсер, музыкант, йог, отец, сын, друг, путь домой"
     },
     "en": {
         "onlineStore": "shop online",
@@ -35,7 +36,8 @@
         "watch": "watch",
         "hit": "hit",
         "yourChoice": "your choice",
-        "favourite": "favourite"
+        "favourite": "favourite",
+        "heroDescr": "Author and performer of my own songs. Producer, musician, yogi, father, son, friend, a path home"
     },
     "uz": {
         "onlineStore": "onlayn do'kon",
@@ -54,6 +56,7 @@
         "watch": "tomosha qil",
         "hit": "xit",
         "yourChoice": "sening tanloving",
-        "favourite": "sevimli"
+        "favourite": "sevimli",
+        "heroDescr": "O‘z qo‘shiqlarimning muallifi va ijrochisiman. Produser, musiqachi, yogi, ota, o‘g‘il, do‘st, uyga yo‘l"
     }
 }

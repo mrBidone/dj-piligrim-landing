@@ -109,6 +109,7 @@ a {
 
 html {
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -146,7 +147,6 @@ body::before {
 
 .section {
   padding: 15px 0;
-  /* background-color: var(--main-bg-color); */
 }
 
 .hero-section {
@@ -318,8 +318,32 @@ body::before {
   position: relative;
 }
 
+.social-links-swiper {
+  overflow-x: auto; /* Включаем горизонтальный скролл */
+  -webkit-overflow-scrolling: touch; /* Плавный скролл на мобильных устройствах */
+}
+
+.social-links-swiper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Плавная прокрутка на мобильных устройствах */
+  scrollbar-width: none; /* Скрыть полосу прокрутки для Firefox */
+}
+
+.social-links-swiper::-webkit-scrollbar {
+  display: none; /* Скрыть полосу прокрутки для Chrome, Safari и Edge */
+}
+
+.social-list {
+  display: flex;
+  gap: 4px;
+  padding: 9px 0;
+  width: max-content; /* Контейнер будет растягиваться по ширине содержимого */
+}
+
 .social-list {
   padding: 9px 0;
+  display: flex;
+  gap: 4px;
 }
 
 .social-list-item {
@@ -430,7 +454,7 @@ body::before {
 
 .modal-subtitle {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: -0.04em;
   margin-bottom: 8px;
 }
@@ -475,22 +499,22 @@ body::before {
     background-size: unset;
   }
 
-  /* .language-btn:hover {
-    color: rgba(15, 15, 15, 0.5);
-  } */
+  .language-btn:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
 
   .language-btn.isActiveLangBtn:hover {
     color: #ffffff;
   }
 
   .offers-link-flex-wrapper:hover {
-    background-color: var(--offers-list-hover-color);
+    background-color: rgba(35, 35, 74, 1);
   }
   .social-link-container .section {
     padding: 20px 0 25px 0;
   }
   .social-link-container.container {
-    max-width: 584px;
+    max-width: 654px;
   }
   .social-link-container {
     overflow: hidden;
@@ -499,6 +523,6 @@ body::before {
 
   .social-link:hover,
   .social-link:focus {
-    background-color: rgba(0, 0, 0, 0.17);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
