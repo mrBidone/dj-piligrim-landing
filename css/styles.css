@@ -129,8 +129,8 @@ body::before {
   height: 100%;
   background-image: url("../img/svg/mob-bg-gradient.svg");
   background-repeat: no-repeat;
-  /* background-position: top 92px center;
-  background-size: 574px 654px; */
+  background-size: cover;
+
   z-index: -10;
 }
 
@@ -473,6 +473,7 @@ body::before {
   body::before {
     background-image: url("../img/svg/bg-blur.svg");
     background-position: center top;
+    background-size: unset;
   }
 
   /* .language-btn:hover {
