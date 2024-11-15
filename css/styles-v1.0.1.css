@@ -304,50 +304,33 @@ body::before {
 
 /* ========== Social-List-Styles ============= */
 
-.social-link-container {
-  overflow: visible;
-  padding: 0;
-  padding-left: 20px;
-}
-
 .social-link-container .section {
   padding: 20px 0 25px 0;
 }
 
-.swiper-wrapper {
-  position: relative;
-}
-
-.social-links-swiper {
-  overflow-x: auto; /* Включаем горизонтальный скролл */
-  -webkit-overflow-scrolling: touch; /* Плавный скролл на мобильных устройствах */
-}
-
-.social-links-swiper {
+.social-link-container {
+  width: max-content;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* Плавная прокрутка на мобильных устройствах */
-  scrollbar-width: none; /* Скрыть полосу прокрутки для Firefox */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
-.social-links-swiper::-webkit-scrollbar {
-  display: none; /* Скрыть полосу прокрутки для Chrome, Safari и Edge */
+.social-link-container::-webkit-scrollbar {
+  display: none;
 }
 
 .social-list {
   display: flex;
   gap: 4px;
   padding: 9px 0;
-  width: max-content; /* Контейнер будет растягиваться по ширине содержимого */
-}
-
-.social-list {
-  padding: 9px 0;
-  display: flex;
-  gap: 4px;
 }
 
 .social-list-item {
   flex: 0 0 auto;
+}
+
+.social-list-item:last-child {
+  padding-right: 20px;
 }
 
 .social-link {
