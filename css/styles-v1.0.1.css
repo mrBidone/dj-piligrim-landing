@@ -494,25 +494,9 @@ body::before {
 
 @media only screen and (min-width: 768px) {
   body::before {
-    background-image: url("../img/svg/gradient-desk@3x.png");
-    background-position: center top;
-    /* background-size: unset; */
-    background-size: auto 85%;
-    /* width: 410px;
-    height: 880px;
-    background-image: url("../img/svg/gradient-desk.png"),
-      linear-gradient(
-        130deg,
-        #ffcd60 0%,
-        #f85863 32.11%,
-        #b070ff 56.87%,
-        #5ba4ff 72.68%,
-        #42bfff 100%
-      );
-    filter: blur(128px);
-    border-radius: 50%;
-
-    background-position: center top; */
+    background-image: url("../img/svg/bg_blur22.svg");
+    background-position: center top -500px;
+    background-size: 100%;
   }
 
   .gradient-background {
