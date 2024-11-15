@@ -9,14 +9,6 @@
         "managerName": "Лола Игамбердыева",
         "vkMusic": "VK Музыка",
         "yaMusic": "Яндекс.Музыка",
-        "new": "новое",
-        "single": "сингл",
-        "bandlink": "bandlink",
-        "firstToListen": "слушай первым",
-        "watch": "смотри",
-        "hit": "хит",
-        "yourChoice": "твой выбор",
-        "favourite": "любимое",
         "heroDescr": "Автор и исполнитель своих песен. Продюсер, музыкант, йог, отец, сын, друг, путь домой"
     },
     "en": {
@@ -29,14 +21,6 @@
         "managerName": "Lola Igamberdyeva",
         "vkMusic": "VK Music",
         "yaMusic": "Yandex.Music",
-        "new": "new",
-        "single": "single",
-        "bandlink": "bandlink",
-        "firstToListen": "be the first to listen",
-        "watch": "watch",
-        "hit": "hit",
-        "yourChoice": "your choice",
-        "favourite": "favourite",
         "heroDescr": "Author and performer of my own songs. Producer, musician, yogi, father, son, friend. Finding the Way Home"
     },
     "uz": {
@@ -49,14 +33,6 @@
         "managerName": "Lola Igamberdyeva",
         "vkMusic": "VK Музыка",
         "yaMusic": "Яндекс.Музыка",
-        "new": "yangi",
-        "single": "singl",
-        "bandlink": "bandlink",
-        "firstToListen": "birinchi bo'lib tingla",
-        "watch": "tomosha qil",
-        "hit": "xit",
-        "yourChoice": "sening tanloving",
-        "favourite": "sevimli",
         "heroDescr": "O‘z qo‘shiqlarimning muallifi va ijrochisiman. Produser, musiqachi, yog, ota, o‘g‘il, do‘st"
     }
 }

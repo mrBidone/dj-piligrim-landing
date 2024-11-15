@@ -485,7 +485,7 @@ body::before {
 
   .gradient-background {
     width: 100%;
-    height: 600px; /* Задай нужные размеры */
+    height: 600px;
 
     background-size: cover;
     background-position: center;
