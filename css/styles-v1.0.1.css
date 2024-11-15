@@ -181,6 +181,7 @@ body::before {
   max-width: 255px;
   font-size: 15px;
   letter-spacing: -0.04em;
+  line-height: 22px;
   text-align: center;
   color: var(--accent-secondary-text-color);
 }
@@ -309,7 +310,7 @@ body::before {
 }
 
 .social-link-container {
-  width: max-content;
+  max-width: max-content;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -477,8 +478,8 @@ body::before {
 
 @media only screen and (min-width: 768px) {
   body::before {
-    background-image: url("../img/svg/bg_blur22.svg");
-    background-position: center top -500px;
+    background-image: url("../img/svg/bg_blur-23.svg");
+    background-position: center top;
     background-size: 100%;
   }
 
