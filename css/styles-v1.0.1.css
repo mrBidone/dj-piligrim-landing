@@ -309,6 +309,10 @@ body::before {
   padding: 20px 0 25px 0;
 }
 
+.container.social-link-container {
+  padding-left: 20px;
+}
+
 .social-link-container {
   max-width: max-content;
   overflow-x: auto;
@@ -474,6 +478,15 @@ body::before {
   font-size: 18px;
   letter-spacing: -0.04em;
   color: #fff;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+  .container.social-link-container {
+    padding-left: calc(20px + (100vw - 375px) * 0.54);
+  }
+  .social-list-item:last-child {
+    padding-right: calc(20px + (100vw - 375px) * 0.54);
+  }
 }
 
 @media only screen and (min-width: 768px) {
