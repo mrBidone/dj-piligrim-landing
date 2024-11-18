@@ -22,6 +22,9 @@ function setInitialLanguage(translations) {
   const browserLang = navigator.language.slice(0, 2);
   const initialLang =
     savedLang || (["ru", "uz"].includes(browserLang) ? browserLang : "en");
+
+  document.documentElement.lang = initialLang;
+
   applyTranslation(initialLang, translations);
 }
 
