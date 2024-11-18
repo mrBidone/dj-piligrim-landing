@@ -185,6 +185,7 @@ body::before {
 }
 .hero-descr {
   max-width: 255px;
+  min-height: 66px;
   font-size: 15px;
   letter-spacing: -0.04em;
   line-height: 22px;
